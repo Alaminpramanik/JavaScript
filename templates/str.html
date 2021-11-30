@@ -16,17 +16,20 @@
     <h1 id="split"></h1>
     <h1 id="concat"></h1>
     <h1 id="slice"></h1>
+    <h1 id="format"></h1>
 
     <script>
+        
         var alamin = "i'm a Junior developer"
         var towhid = "He is a Junior developer"
-        var upcase=alamin.toUpperCase();
-        var lcase=alamin.toLowerCase();
-        var replac=towhid.replace("He","she");
-        var split=towhid.split(" ");
+        // var upcase=alamin.toUpperCase();
+        // var lcase=alamin.toLowerCase();
+        // var replac=towhid.replace("He","she");
+        var split=towhid.split("");
         var concat=towhid[3].concat(split[4]);
-        var slice=alamin.slice(2,6)
-        var busines= "<h1>" +alamin  + ' ' +towhid + "</h1>";
+        console.log('concat', concat)
+        // var slice=alamin.slice(2,6)
+        // var busines= "<h1>" +alamin  + ' ' +towhid + "</h1>";
         // var business = document.write("If you're looking for an easy-to-use business name creator, Shopify's brand naming generator will help you name your business or ecommerce store in 10-seconds")
         // document.write(busines)
         // document.getElementById('uppercase').innerHTML= upcase
@@ -35,7 +38,16 @@
         // document.getElementById('tawhid').innerHTML= towhid
         // document.getElementById('split').innerHTML= split
         // document.getElementById('concat').innerHTML= concat
-        document.getElementById('slice').innerHTML= slice
+        // document.getElementById('slice').innerHTML= slice
+        // var split=alamin.split(" ");
+        // console.log('split', split)
+        split1=split[0];
+        split2=split[1];
+        var format= split.slice()
+        // var format= split1.slice(0,1).toUpperCase() + split2.slice(1).toLowerCase();
+        console.log('format', format)
+        document.getElementById('format').innerHTML= format
+        
     </script>
 </body>
 </html>
