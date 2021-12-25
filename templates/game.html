@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <script>
+      var simplegame = Math.random() * 10;
+      simplegame = Math.ceil(simplegame)
+      console.log(simplegame)
+
+      function higher() {
+        if (simplegame > 5) {
+          document.getElementById('textarea').innerHTML = "you win";
+        }
+        else {
+          document.getElementById('textarea').innerHTML = "you lose";
+        }
+      }
+
+      function lower() {
+        if (simplegame <= 5) {
+          document.getElementById('textarea').innerHTML = "you win";
+        }
+        else {
+          document.getElementById('textarea').innerHTML = "you lose";
+        }
+      }
+
+      function resets() {
+        window.location.reload();
+      }
+
+    </script>
+
+    <div class="game text-center">
+      <h1>Higher Or Lower</h1>
+      <h2>Is my number 5 or less then 5?</h2>
+      <p>range:1-10</p>
+      <h3 id="textarea"></h3>
+      <button type="button" class="btn btn-info" value="Higher" onclick="higher()">Higher</button>
+      <button type="button" class="btn btn-info" value="Lower" onclick="lower()">Lower</button>
+    </div>
+
+    <div class="game text-center">
+      <h1>Play Again</h1>
+      <button type="button" class="btn btn-info" value="Play Again" onclick="resets()">Play Again</button>
+    </div>
+
+    <div>
+
+    </div>
+
+
+  </body>
+
+</html>
