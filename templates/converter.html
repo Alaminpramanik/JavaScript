@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 text-center content">
+          <h1> Temparature Converter</h1>
+          <form action="">
+            <form class="form-group">
+              <label for="userInput">Enter Your Input</label>
+              <input type="number" id="userInput">
+
+            </form>
+            <div class="form-group">
+              <button type="button" value="To Celesius" onclick="toCelsius()">Celesius</button>
+              <button type="button" value="To Farenheite" onclick="Farenheite()">Farenheite</button>
+            </div>
+          </form>
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector('.container').style.backgroundColor = "red"
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+    <h1 id="dom">first javascript dom practice</h1>
+    <p class="first">first dom</p>
+    <p class="second">second dom</p>
+    <p class="third">third dom</p>
+
+
+    <script>
+      // document.getElementById('dom').innerHTML = "first javascript dom practice"
+      document.querySelector('.second').style.color = "green"
+      // document.querySelector('.first').style.backgroundColor = "red"
+      document.querySelector('.third').style.fontSize = "x-large";
+
+      var divelement = document.createElement('div');
+      divelement.id = 'domID'
+      var addtext = document.createTextNode('javascript dom div test');
+
+      divelement.appendChild(addtext);
+
+      var newcontent = document.getElementById('dom');
+
+      document.body.insertBefore(divelement, newcontent)
+    </script>
+  </body>
+
+</html>
