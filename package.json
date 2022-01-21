@@ -1,0 +1,16 @@
+{
+  "name": "JAVASCRIPT",
+  "version": "1.0.0",
+  "main": "accessingobject.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "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"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

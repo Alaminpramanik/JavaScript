@@ -266,13 +266,3 @@
 // console.log(rect7.position)
 
 
-//Intro to Inheritance in Javascript
-//Inheritance = 1. classical Inheritance
-//              2. Prototypical Inheritance
-
-//Prototype and Prototypical Inheritance in Javascript 
-// Prototype is a parent class
-
-function person(name) {
-    this.name = name
-}
